@@ -29,3 +29,15 @@ Go to the project repertory and enter the following commands:
 npm init -y
 npm install express express-formidable cors dotenv mongoose
 ```
+
+Create a `.env` file at the project root, you must put two environment variables inside this file:
+
+- `PORT`: The port the server must use. Do not create this variable if you want to deploy the API with Heroku
+- `DATABASE_URI`: The Mongoose database adress
+
+---
+
+## Launch
+
+The server can be launched simply by entering `npm start` when you're at the root of the project.
+If you want to implement new things to this API, you might want to have the server update automatically when modifying a file. In this case, use `npx nodemon index.js`, which allows the server to stop and restart when you save a change in the project.
